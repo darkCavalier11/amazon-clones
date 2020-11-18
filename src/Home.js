@@ -20,15 +20,52 @@ function Home() {
             }
             rating={5}
           ></Product>
-          <Product></Product>
+          <Product
+            title="Samsung Galaxy M21"
+            price={"13,999"}
+            image={
+              "https://images-na.ssl-images-amazon.com/images/I/71dujTTJDZL._SY606_.jpg"
+            }
+            rating={4}
+          ></Product>
         </div>
         <div className="home__row">
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
+          <Product
+            title="Samsung Galaxy M21"
+            price={"13,999"}
+            image={
+              "https://m.media-amazon.com/images/I/71vYqKHpkoL._AC_UY218_.jpg"
+            }
+            rating={4}
+          ></Product>
+          <Product
+            title="
+            KILLER
+            Mini Backpack 12L Daypack "
+            price={"355"}
+            image={
+              "https://images-na.ssl-images-amazon.com/images/I/41OU3aHyF2L._SY300_.jpg"
+            }
+            rating={4}
+          ></Product>
+          <Product
+            title="Bourge Men's Loire-63 Running Shoes "
+            price={"479"}
+            image={
+              "https://images-na.ssl-images-amazon.com/images/I/71vH7fMBGTL._UY500_.jpg"
+            }
+            rating={2}
+          ></Product>
         </div>
         <div className="home__row">
-          <Product></Product>
+          <Product
+            title="OnePlus Y Series 80 cm "
+            price={"31,999"}
+            image={
+              "https://images-na.ssl-images-amazon.com/images/I/817gj7pfUzL._SL1500_.jpg"
+            }
+            rating={5}
+          ></Product>
         </div>
       </div>
     </div>
