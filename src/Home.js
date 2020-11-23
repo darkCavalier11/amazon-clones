@@ -13,6 +13,7 @@ function Home() {
         ></img>
         <div className="home__row">
           <Product
+            id="1"
             title="The Lean Startup"
             price={523}
             image={
@@ -21,6 +22,7 @@ function Home() {
             rating={5}
           ></Product>
           <Product
+            id="12"
             title="Samsung Galaxy M21"
             price={"13,999"}
             image={
@@ -31,6 +33,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
+            id="123"
             title="Samsung Galaxy M21"
             price={"13,999"}
             image={
@@ -39,6 +42,7 @@ function Home() {
             rating={4}
           ></Product>
           <Product
+            id="1234"
             title="
             KILLER
             Mini Backpack 12L Daypack "
@@ -49,6 +53,7 @@ function Home() {
             rating={4}
           ></Product>
           <Product
+            id="12345"
             title="Bourge Men's Loire-63 Running Shoes "
             price={"479"}
             image={
@@ -59,6 +64,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
+            id="123456"
             title="OnePlus Y Series 80 cm "
             price={"31,999"}
             image={
