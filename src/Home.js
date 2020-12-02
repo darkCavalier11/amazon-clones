@@ -24,7 +24,7 @@ function Home() {
           <Product
             id="12"
             title="Samsung Galaxy M21"
-            price={"13,999"}
+            price={13999}
             image={
               "https://images-na.ssl-images-amazon.com/images/I/71dujTTJDZL._SY606_.jpg"
             }
