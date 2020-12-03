@@ -1,6 +1,8 @@
+import { render } from "@testing-library/react";
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import renderPrice from './Aux';
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
   console.log("items >>>", basket);

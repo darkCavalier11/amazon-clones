@@ -34,8 +34,8 @@ function Home() {
         <div className="home__row">
           <Product
             id="123"
-            title="Samsung Galaxy M21"
-            price={"13,999"}
+            title="Samsung Refrigrator"
+            price={15749}
             image={
               "https://m.media-amazon.com/images/I/71vYqKHpkoL._AC_UY218_.jpg"
             }
@@ -46,7 +46,7 @@ function Home() {
             title="
             KILLER
             Mini Backpack 12L Daypack "
-            price={"355"}
+            price={355}
             image={
               "https://images-na.ssl-images-amazon.com/images/I/41OU3aHyF2L._SY300_.jpg"
             }
@@ -55,7 +55,7 @@ function Home() {
           <Product
             id="12345"
             title="Bourge Men's Loire-63 Running Shoes "
-            price={"479"}
+            price={479}
             image={
               "https://images-na.ssl-images-amazon.com/images/I/71vH7fMBGTL._UY500_.jpg"
             }
@@ -66,7 +66,7 @@ function Home() {
           <Product
             id="123456"
             title="OnePlus Y Series 80 cm "
-            price={"31,999"}
+            price={31999}
             image={
               "https://images-na.ssl-images-amazon.com/images/I/817gj7pfUzL._SL1500_.jpg"
             }
