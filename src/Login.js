@@ -1,15 +1,33 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { auth } from "./firebase";
 function Login() {
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const signIn = e => {
+  const signIn = (e) => {
     e.preventDefault();
-  }
-  const register = e => {
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
+  };
+  const register = (e) => {
     e.preventDefault();
-  }
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // successfully created new user
+        console.log(auth);
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <div className="login">
       <Link to="/">
@@ -46,9 +64,7 @@ function Login() {
           By continuing, you agree to Amazon's Conditions of Use and Privacy
           Notice.
         </p>
-        <button className="login__registerButton"
-        onClick={register}
-        >
+        <button className="login__registerButton" onClick={register}>
           Create Your Amazon Account
         </button>
       </div>
