@@ -1,10 +1,12 @@
 import userEvent from "@testing-library/user-event";
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 function Checkout() {
+  const history = useHistory();
   const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="checkout">
