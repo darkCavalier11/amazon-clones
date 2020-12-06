@@ -3,6 +3,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
+import Orders from "./Orders";
 import Payment from "./Payment";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -45,6 +46,10 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <Route path="/orders">
+            <Header></Header>
+            <Orders></Orders>
+          </Route>
           <Route path="/checkout">
             <Header></Header>
             <Checkout></Checkout>
@@ -52,7 +57,7 @@ function App() {
           <Route path="/payment">
             <Header></Header>
             <Elements stripe={promise}>
-            <Payment></Payment>
+              <Payment></Payment>
             </Elements>
           </Route>
           <Route path="/">
